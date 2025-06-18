@@ -1,0 +1,26 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidenav{
+    font-weight: 900;
+    display: grid;
+    gap: 56px;
+    padding: 16px;
+}
+
+.side-header, .general-navlinks, .other-navlinks{
+    display: grid;
+    grid-template-columns: 25px 100px;
+    gap: 16px;
+    align-items: center;
+}
+
+img{
+    height: 24px;
+}
