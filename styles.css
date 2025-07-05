@@ -34,5 +34,35 @@ img{
 
 .header {
     display: grid;
-    grid-template-rows: 0.25fr 1fr;
+    grid-template-rows: 0.25fr 0.45fr;
+}
+
+.upper-header {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+}
+
+.left-upper-header {
+    display: grid;
+    grid-template-columns: 25px 200px;
+}
+
+.right-upper-header {
+    display: grid;
+    grid-template-columns: 25px 50px 125px;
+}
+
+.lower-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-lower-header {
+    display: grid;
+    grid-template-columns: 50px 200px;
+}
+
+.right-lower-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
