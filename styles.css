@@ -33,7 +33,7 @@ img{
 
 .header {
     display: grid;
-    grid-template-rows: 0.25fr 0.45fr;
+    grid-template-rows: 0.25fr 0.5fr;
 }
 
 .upper-header {
@@ -44,19 +44,27 @@ img{
 
 .left-upper-header {
     display: grid;
-    grid-template-columns: 25px 300px;
+    grid-template-columns: 25px 1fr;
+    gap: 8px;
     align-items: center;
 }
 
 .right-upper-header {
     display: grid;
     grid-template-columns: 25px 50px 125px;
+    gap: 8px;
     align-items: center;
     justify-items: center;
+    justify-content: end;
 }
 
 .upper-header-pfp {
-    align-self: center;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.upper-header-name {
+    font-weight: 900;
 }
 
 .search-bar {
@@ -67,15 +75,44 @@ img{
 
 .lower-header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 300px;
+    padding: 16px;
+    font-weight: 900;
 }
 
 .left-lower-header {
     display: grid;
-    grid-template-columns: 50px 200px;
+    grid-template-columns: 50px 1fr;
+    gap: 8px;
+    align-items: center;
 }
 
 .right-lower-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.lower-header-pfp {
+    height: 42px;
+    border-radius: 50%;
+}
+
+.greeting {
+    font-size: 12px;
+}
+
+.user-handle {
+    font-size: 20px;
+}
+
+.header-button {
+    color: white;
+    background-color: rgb(0, 128, 255);
+    padding: 6px 18px;
+    font-size: 12px;
+    border-radius: 16px;
+    text-align: center;
+    width: 42px;
 }
