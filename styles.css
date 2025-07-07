@@ -116,3 +116,18 @@ img{
     text-align: center;
     width: 42px;
 }
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects, .announcements, .trending {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.projects {
+    grid-row: 1 / 3;
+}
