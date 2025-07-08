@@ -136,4 +136,31 @@ img{
 
 .projects {
     grid-row: 1 / 3;
+    padding-left: 16px;
+}
+
+.projects-header, .announcements-header, .trending-header {
+    align-self: center;
+}
+
+.projects-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+    gap: 16px;
+}
+
+.card {
+    width: 250px;
+    height: 100px;
+    padding: 25px;
+    display: grid;
+    
+}
+
+.announcements {
+    padding-right: 16px;
+}
+
+.trending {
+    padding-right: 16px;
 }
