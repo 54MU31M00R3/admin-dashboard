@@ -9,7 +9,7 @@ body {
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 250px 1fr;
     grid-template-rows: 1fr 4fr;
 }
 
@@ -125,7 +125,7 @@ img{
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 250px;
     background-color: rgb(235, 246, 246);
     padding-top: 16px;
 }
@@ -137,6 +137,7 @@ img{
 
 .projects {
     padding-left: 16px;
+    padding-right: 16px;
 }
 
 .projects-header, .announcements-header, .trending-header {
@@ -146,12 +147,12 @@ img{
 
 .projects-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, 150px);
     gap: 16px;
 }
 
 .card-left-border {
-    width: 300px;
     height: 150px;
     background-color: orange;
     border-radius: 8px;
@@ -159,7 +160,6 @@ img{
 }
 
 .card {
-    width: 250px;
     height: 100px;
     padding: 25px;
     display: grid;
@@ -185,18 +185,58 @@ img{
     gap: 8px;
 }
 
-.announcements {
-    padding-right: 16px;
+.card-desc, .announcement-desc, .account-bio {
+    color: gray;
+    font-weight: 500;
 }
 
-.announcements-card {
+.right-cards {
+    padding-right: 24px;
+}
+
+.announcements-card, .trending-card {
     background-color: white;
+    padding: 25px;
+    display: grid;
+    gap: 16px;
+    border-radius: 8px;
+    grid-template-columns: 1fr;
 }
 
-.trending {
-    padding-right: 16px;
+.announcement {
+    display: grid;
+    align-items: center;
+    height: 45px;
 }
 
-.trending-card {
-    background-color: white;
+.announcement-header {
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.announcement-desc {
+    font-size: 10px;
+}
+
+.announcements-linebreak {
+    height: 1px;
+    background-color: rgb(194, 190, 190);
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    font-size: 12px;
+    gap: 8px;
+}
+
+.trending-img-container {
+    height: 45px;
+    border-radius: 50%;
+    width: 45px;
+    overflow: hidden;
+}
+
+.trending-pfp {
+    height: 45px;
 }
